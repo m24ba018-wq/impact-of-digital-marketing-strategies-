@@ -2,11 +2,12 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.stats import pearsonr, f_oneway
 import statsmodels.api as sm
-import pingouin as pg
 
 # --- 1. Streamlit Page Configuration ---
 st.set_page_config(layout="wide", page_title="Digital Marketing Impact Analysis")
